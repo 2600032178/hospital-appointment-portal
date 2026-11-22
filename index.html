@@ -106,22 +106,119 @@
       <section id="appointment" aria-labelledby="appointment-heading">
         <h2 id="appointment-heading">Book an Appointment</h2>
         <p class="section-intro">Fields marked with <span class="req" aria-hidden="true">*</span><span class="visually-hidden">an asterisk</span> are required.</p>
-      <div class="form-card">
-        <div class="field"><span>Name</span><input type="text" placeholder="Name"></div>
-        <div class="field"><span>Age</span><input type="text" placeholder="Age"></div>
-        <div class="field"><span>Email</span><input type="text" placeholder="Email"></div>
-        <div class="field"><span>Phone</span><input type="text" placeholder="Phone"></div>
-        <div class="field"><span>Department</span>
-          <select><option>Select</option><option>Cardiology</option><option>Paediatrics</option><option>Orthopaedics</option><option>Emergency</option></select></div>
-        <div class="field"><span>Date</span><input type="text" placeholder="dd/mm/yyyy"></div>
-        <div class="field"><span>Time</span><br>
-          <input type="radio" name="t"> Morning
-          <input type="radio" name="t"> Afternoon
-          <input type="radio" name="t"> Evening</div>
-        <div class="field"><input type="checkbox"> I agree to the terms</div>
-        <div class="field"><textarea rows="4" placeholder="Problem"></textarea></div>
-        <div class="btn" onclick="submitForm()">Submit</div>
+      <div id="success-box" class="success-box" role="status" tabindex="-1">
+        Thank you. Your appointment request has been received. Our team will confirm it by phone within one working day.
       </div>
+      <div id="error-summary" class="error-summary" role="alert" tabindex="-1">
+        <h3>There is a problem</h3>
+        <ul id="error-list"></ul>
+      </div>
+
+      <form id="appointment-form" class="form-card" action="#" method="post" novalidate>
+
+        <fieldset>
+          <legend>Patient details</legend>
+
+          <div class="field">
+            <label for="full-name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="full-name" name="fullName" autocomplete="name" required aria-describedby="full-name-error">
+            <p id="full-name-error" class="error-msg"></p>
+          </div>
+
+          <div class="field">
+            <label for="dob">Date of birth <span class="req" aria-hidden="true">*</span></label>
+            <input type="date" id="dob" name="dob" autocomplete="bday" required aria-describedby="dob-error">
+            <p id="dob-error" class="error-msg"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+            <span id="email-hint" class="hint">We will send your confirmation here.</span>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint email-error">
+            <p id="email-error" class="error-msg"></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Mobile number <span class="req" aria-hidden="true">*</span></label>
+            <span id="phone-hint" class="hint">10 digits, no spaces or country code.</span>
+            <input type="tel" id="phone" name="phone" autocomplete="tel-national" inputmode="numeric" pattern="[0-9]{10}" required aria-describedby="phone-hint phone-error">
+            <p id="phone-error" class="error-msg"></p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Appointment details</legend>
+
+          <div class="field">
+            <label for="department">Department <span class="req" aria-hidden="true">*</span></label>
+            <select id="department" name="department" required aria-describedby="department-error">
+              <option value="">Select a department</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="paediatrics">Paediatrics</option>
+              <option value="orthopaedics">Orthopaedics</option>
+              <option value="emergency">Emergency &amp; Trauma</option>
+            </select>
+            <p id="department-error" class="error-msg"></p>
+          </div>
+
+          <div class="field">
+            <label for="doctor">Preferred doctor (optional)</label>
+            <select id="doctor" name="doctor">
+              <option value="">Any available doctor</option>
+              <option value="Dr. Anita Rao" data-dept="cardiology">Dr. Anita Rao (Cardiologist)</option><option value="Dr. Rahul Mehta" data-dept="paediatrics">Dr. Rahul Mehta (Paediatrician)</option><option value="Dr. Sana Iqbal" data-dept="orthopaedics">Dr. Sana Iqbal (Orthopaedic Surgeon)</option><option value="Dr. Vikram Nair" data-dept="emergency">Dr. Vikram Nair (Emergency Physician)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="visit-date">Preferred appointment date <span class="req" aria-hidden="true">*</span></label>
+            <input type="date" id="visit-date" name="visitDate" required aria-describedby="visit-date-error">
+            <p id="visit-date-error" class="error-msg"></p>
+          </div>
+
+          <div class="field">
+            <fieldset class="bare" aria-describedby="slot-error">
+              <legend class="group-label">Preferred time <span class="req" aria-hidden="true">*</span></legend>
+              <div class="choices-inline">
+                <div class="choice"><input type="radio" id="slot-morning" name="slot" value="morning" required><label for="slot-morning">Morning (9 AM to 12 PM)</label></div>
+                <div class="choice"><input type="radio" id="slot-afternoon" name="slot" value="afternoon"><label for="slot-afternoon">Afternoon (12 PM to 4 PM)</label></div>
+                <div class="choice"><input type="radio" id="slot-evening" name="slot" value="evening"><label for="slot-evening">Evening (4 PM to 8 PM)</label></div>
+              </div>
+              <p id="slot-error" class="error-msg"></p>
+            </fieldset>
+          </div>
+
+          <div class="field">
+            <fieldset class="bare">
+              <legend class="group-label">Reminders (optional)</legend>
+              <div class="choices-inline">
+                <div class="choice"><input type="checkbox" id="rem-sms" name="reminders" value="sms"><label for="rem-sms">Text message</label></div>
+                <div class="choice"><input type="checkbox" id="rem-email" name="reminders" value="email"><label for="rem-email">Email</label></div>
+                <div class="choice"><input type="checkbox" id="rem-first" name="firstVisit" value="yes"><label for="rem-first">This is my first visit</label></div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="field">
+            <label for="reason">Reason for visit (optional)</label>
+            <span id="reason-hint" class="hint">Briefly describe your symptoms or the reason for the appointment.</span>
+            <textarea id="reason" name="reason" rows="5" maxlength="500" aria-describedby="reason-hint reason-count"></textarea>
+            <p id="reason-count" class="char-count">500 characters remaining</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Consent</legend>
+          <div class="field">
+            <div class="choice">
+              <input type="checkbox" id="consent" name="consent" value="yes" required aria-describedby="consent-error">
+              <label for="consent">I confirm the details are correct and agree to the hospital privacy policy. <span class="req" aria-hidden="true">*</span></label>
+            </div>
+            <p id="consent-error" class="error-msg"></p>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn">Request appointment</button>
+      </form>
       </section>
     </main>
 
@@ -144,8 +241,5 @@
     </div>
   </footer>
 
-  <script>
-function submitForm(){alert('Thank you, appointment booked!');}
-  </script>
 </body>
 </html>
