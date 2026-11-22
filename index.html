@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Hospital</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CityCare Hospital | Services, Doctors and Appointments</title>
+<meta name="description" content="CityCare Hospital: explore our services and doctors and request a patient appointment online.">
 <style>
 body{font-family:Arial;margin:0;background:#f5f5f5}
 .header{background:#7fb3d5;padding:15px;overflow:hidden}
@@ -23,42 +27,42 @@ body{font-family:Arial;margin:0;background:#f5f5f5}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="logo">CityCare Hospital</div>
-  <div class="menu">
-    <div class="menu-item" onclick="go('top')">Home</div>
-    <div class="menu-item" onclick="go('services')">Services</div>
-    <div class="menu-item" onclick="go('doctors')">Doctors</div>
-    <div class="menu-item" onclick="go('appt')">Appointment</div>
-  </div>
-</div>
-<div class="banner" id="top">
-  <div class="big-title">Welcome to CityCare Hospital</div>
-  <div class="small-text">Quality care for every family, 24 hours a day</div>
-  <br><br>
-  <div class="btn" onclick="go('appt')">Book Appointment</div>
-</div>
-<div class="section" id="services">
-  <div class="section-title">Our Services</div>
-  <div>
-    <div class="box"><div class="box-title">Cardiology</div><div class="small-text">Heart check-ups, ECG, echocardiography and cardiac rehabilitation.</div></div>
-    <div class="box"><div class="box-title">Paediatrics</div><div class="small-text">Care for infants, children and teenagers, including vaccinations.</div></div>
-    <div class="box"><div class="box-title">Orthopaedics</div><div class="small-text">Bone, joint and sports injury treatment and physiotherapy.</div></div>
-    <div class="box"><div class="box-title">Emergency &amp; Trauma</div><div class="small-text">24-hour emergency care with an on-site ambulance service.</div></div>
-    </div>
-</div>
-<div class="section" id="doctors">
-  <div class="section-title">Our Doctors</div>
-  <div>
-    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%230b3d6b%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3EAR%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Anita Rao</div><div class="small-text">Cardiologist</div><div>15 years of experience in heart disease prevention and care.</div></div>
-    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%230b6b5f%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3ERM%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Rahul Mehta</div><div class="small-text">Paediatrician</div><div>Child health, vaccinations and growth monitoring.</div></div>
-    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%237a3b00%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3ESI%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Sana Iqbal</div><div class="small-text">Orthopaedic Surgeon</div><div>Joint replacement and sports injury specialist.</div></div>
-    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%235b2a86%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3EVN%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Vikram Nair</div><div class="small-text">Emergency Physician</div><div>Leads the 24-hour emergency and trauma team.</div></div>
-    </div>
-</div>
-<div class="section" id="appt">
-  <div class="section-title">Book an Appointment</div>
-  <div class="form">
+<header class="header">
+  <a class="logo" href="#top">CityCare Hospital</a>
+  <nav class="menu" aria-label="Main navigation">
+    <a class="menu-item" href="#top">Home</a>
+    <a class="menu-item" href="#services">Services</a>
+    <a class="menu-item" href="#doctors">Doctors</a>
+    <a class="menu-item" href="#appt">Appointment</a>
+  </nav>
+</header>
+<main>
+  <section class="banner" id="top">
+    <h1 class="big-title">Welcome to CityCare Hospital</h1>
+    <p class="small-text">Quality care for every family, 24 hours a day</p>
+    <a class="btn" href="#appt">Book Appointment</a>
+  </section>
+  <section class="section" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div>
+      <article class="box"><h3 class="box-title">Cardiology</h3><p class="small-text">Heart check-ups, ECG, echocardiography and cardiac rehabilitation.</p></article>
+      <article class="box"><h3 class="box-title">Paediatrics</h3><p class="small-text">Care for infants, children and teenagers, including vaccinations.</p></article>
+      <article class="box"><h3 class="box-title">Orthopaedics</h3><p class="small-text">Bone, joint and sports injury treatment and physiotherapy.</p></article>
+      <article class="box"><h3 class="box-title">Emergency &amp; Trauma</h3><p class="small-text">24-hour emergency care with an on-site ambulance service.</p></article>
+      </div>
+  </section>
+  <section class="section" id="doctors">
+    <h2 class="section-title">Our Doctors</h2>
+    <div>
+      <article class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%230b3d6b%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3EAR%3C/text%3E%3C/svg%3E" alt="Portrait of Dr. Anita Rao, Cardiologist"><h3 class="box-title">Dr. Anita Rao</h3><p class="small-text">Cardiologist</p><p>15 years of experience in heart disease prevention and care.</p></article>
+      <article class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%230b6b5f%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3ERM%3C/text%3E%3C/svg%3E" alt="Portrait of Dr. Rahul Mehta, Paediatrician"><h3 class="box-title">Dr. Rahul Mehta</h3><p class="small-text">Paediatrician</p><p>Child health, vaccinations and growth monitoring.</p></article>
+      <article class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%237a3b00%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3ESI%3C/text%3E%3C/svg%3E" alt="Portrait of Dr. Sana Iqbal, Orthopaedic Surgeon"><h3 class="box-title">Dr. Sana Iqbal</h3><p class="small-text">Orthopaedic Surgeon</p><p>Joint replacement and sports injury specialist.</p></article>
+      <article class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%235b2a86%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3EVN%3C/text%3E%3C/svg%3E" alt="Portrait of Dr. Vikram Nair, Emergency Physician"><h3 class="box-title">Dr. Vikram Nair</h3><p class="small-text">Emergency Physician</p><p>Leads the 24-hour emergency and trauma team.</p></article>
+      </div>
+  </section>
+  <section class="section" id="appt">
+    <h2 class="section-title">Book an Appointment</h2>
+    <div class="form">
       <div class="row"><span>Name</span><input type="text" placeholder="Name"></div>
       <div class="row"><span>Age</span><input type="text" placeholder="Age"></div>
       <div class="row"><span>Email</span><input type="text" placeholder="Email"></div>
@@ -74,22 +78,21 @@ body{font-family:Arial;margin:0;background:#f5f5f5}
       <div class="row"><textarea rows="4" placeholder="Problem"></textarea></div>
       <div class="btn" onclick="submitForm()">Submit</div>
     </div>
-</div>
-<div class="section">
+  </section>
+</main>
+<aside class="section" aria-label="Emergency contact and visiting hours">
   <div class="box">
-    <div class="box-title">Emergency</div>
-    <div class="small-text">Call 040-5555-0100 any time</div>
-    <br>
-    <div class="box-title">Visiting hours</div>
-    <div class="small-text">Mon - Sat: 9 AM to 8 PM</div>
+    <h2 class="box-title">Emergency</h2>
+    <p class="small-text">Call 040-5555-0100 any time</p>
+    <h2 class="box-title">Visiting hours</h2>
+    <p class="small-text">Mon - Sat: 9 AM to 8 PM</p>
   </div>
-</div>
-<div class="footer">
-  <div>&copy; 2026 CityCare Hospital</div>
-  <div>12 Health Avenue, Hyderabad</div>
-</div>
+</aside>
+<footer class="footer">
+  <p>&copy; 2026 CityCare Hospital</p>
+  <address>12 Health Avenue, Hyderabad</address>
+</footer>
 <script>
-function go(id){document.getElementById(id).scrollIntoView();}
 function submitForm(){alert('Thank you, appointment booked!');}
 </script>
 </body>
