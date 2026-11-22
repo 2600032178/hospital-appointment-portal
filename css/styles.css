@@ -59,6 +59,14 @@ a:hover { color: var(--navy-dark); text-decoration-thickness: 2px; }
 
 .container { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
 
+/* Date inputs focus an inner segment in some browsers, so style the whole field */
+input[type="date"]:focus,
+input[type="date"]:focus-within {
+  outline: 3px solid var(--navy-dark);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--focus);
+}
+
 /* ---------- Header and navigation ---------- */
 .site-header { background: var(--navy); color: #fff; }
 .bar {
