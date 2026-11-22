@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Hospital</title>
+<style>
+body{font-family:Arial;margin:0;background:#f5f5f5}
+.header{background:#7fb3d5;padding:15px;overflow:hidden}
+.logo{float:left;font-size:22px;color:#fff;font-weight:bold}
+.menu{float:right}
+.menu-item{display:inline-block;margin-left:20px;color:#fff;cursor:pointer}
+.banner{background:#d6eaf8;padding:50px;text-align:center}
+.big-title{font-size:34px;color:#7fb3d5}
+.small-text{color:#999;font-size:13px}
+.section{padding:30px 40px}
+.section-title{font-size:26px;color:#5dade2;margin-bottom:15px}
+.box{display:inline-block;width:220px;background:#fff;padding:15px;margin:8px;vertical-align:top;border:1px solid #ddd}
+.box-title{font-weight:bold;font-size:18px}
+.doc-img{width:80px;height:80px}
+.form{background:#fff;padding:25px;max-width:600px;margin:auto}
+.row{margin-bottom:12px}
+.row input,.row select,.row textarea{width:100%;padding:8px;border:1px solid #ccc;outline:none}
+.btn{background:#85c1e9;color:#fff;padding:12px 24px;display:inline-block;cursor:pointer}
+.footer{background:#7fb3d5;color:#eee;padding:20px;text-align:center;font-size:12px}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="logo">CityCare Hospital</div>
+  <div class="menu">
+    <div class="menu-item" onclick="go('top')">Home</div>
+    <div class="menu-item" onclick="go('services')">Services</div>
+    <div class="menu-item" onclick="go('doctors')">Doctors</div>
+    <div class="menu-item" onclick="go('appt')">Appointment</div>
+  </div>
+</div>
+<div class="banner" id="top">
+  <div class="big-title">Welcome to CityCare Hospital</div>
+  <div class="small-text">Quality care for every family, 24 hours a day</div>
+  <br><br>
+  <div class="btn" onclick="go('appt')">Book Appointment</div>
+</div>
+<div class="section" id="services">
+  <div class="section-title">Our Services</div>
+  <div>
+    <div class="box"><div class="box-title">Cardiology</div><div class="small-text">Heart check-ups, ECG, echocardiography and cardiac rehabilitation.</div></div>
+    <div class="box"><div class="box-title">Paediatrics</div><div class="small-text">Care for infants, children and teenagers, including vaccinations.</div></div>
+    <div class="box"><div class="box-title">Orthopaedics</div><div class="small-text">Bone, joint and sports injury treatment and physiotherapy.</div></div>
+    <div class="box"><div class="box-title">Emergency &amp; Trauma</div><div class="small-text">24-hour emergency care with an on-site ambulance service.</div></div>
+    </div>
+</div>
+<div class="section" id="doctors">
+  <div class="section-title">Our Doctors</div>
+  <div>
+    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%230b3d6b%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3EAR%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Anita Rao</div><div class="small-text">Cardiologist</div><div>15 years of experience in heart disease prevention and care.</div></div>
+    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%230b6b5f%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3ERM%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Rahul Mehta</div><div class="small-text">Paediatrician</div><div>Child health, vaccinations and growth monitoring.</div></div>
+    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%237a3b00%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3ESI%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Sana Iqbal</div><div class="small-text">Orthopaedic Surgeon</div><div>Joint replacement and sports injury specialist.</div></div>
+    <div class="box"><img class="doc-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2080%2080%27%3E%3Crect%20width%3D%2780%27%20height%3D%2780%27%20rx%3D%2740%27%20fill%3D%27%235b2a86%27/%3E%3Ctext%20x%3D%2740%27%20y%3D%2750%27%20font-size%3D%2728%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fff%27%20font-family%3D%27Arial%27%3EVN%3C/text%3E%3C/svg%3E"><br><div class="box-title">Dr. Vikram Nair</div><div class="small-text">Emergency Physician</div><div>Leads the 24-hour emergency and trauma team.</div></div>
+    </div>
+</div>
+<div class="section" id="appt">
+  <div class="section-title">Book an Appointment</div>
+  <div class="form">
+      <div class="row"><span>Name</span><input type="text" placeholder="Name"></div>
+      <div class="row"><span>Age</span><input type="text" placeholder="Age"></div>
+      <div class="row"><span>Email</span><input type="text" placeholder="Email"></div>
+      <div class="row"><span>Phone</span><input type="text" placeholder="Phone"></div>
+      <div class="row"><span>Department</span>
+        <select><option>Select</option><option>Cardiology</option><option>Paediatrics</option><option>Orthopaedics</option><option>Emergency</option></select></div>
+      <div class="row"><span>Date</span><input type="text" placeholder="dd/mm/yyyy"></div>
+      <div class="row"><span>Time</span><br>
+        <input type="radio" name="t"> Morning
+        <input type="radio" name="t"> Afternoon
+        <input type="radio" name="t"> Evening</div>
+      <div class="row"><input type="checkbox"> I agree to the terms</div>
+      <div class="row"><textarea rows="4" placeholder="Problem"></textarea></div>
+      <div class="btn" onclick="submitForm()">Submit</div>
+    </div>
+</div>
+<div class="section">
+  <div class="box">
+    <div class="box-title">Emergency</div>
+    <div class="small-text">Call 040-5555-0100 any time</div>
+    <br>
+    <div class="box-title">Visiting hours</div>
+    <div class="small-text">Mon - Sat: 9 AM to 8 PM</div>
+  </div>
+</div>
+<div class="footer">
+  <div>&copy; 2026 CityCare Hospital</div>
+  <div>12 Health Avenue, Hyderabad</div>
+</div>
+<script>
+function go(id){document.getElementById(id).scrollIntoView();}
+function submitForm(){alert('Thank you, appointment booked!');}
+</script>
+</body>
+</html>
