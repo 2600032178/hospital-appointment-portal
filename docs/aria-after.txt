@@ -1,0 +1,53 @@
+- region "Book an Appointment":
+  - heading "Book an Appointment" [level=2]
+  - paragraph: Fields marked with an asterisk are required.
+  - group "Patient details":
+    - text: Patient details Full name
+    - textbox "Full name"
+    - text: Date of birth
+    - textbox "Date of birth"
+    - text: Email address We will send your confirmation here.
+    - textbox "Email address"
+    - text: Mobile number 10 digits, no spaces or country code.
+    - textbox "Mobile number"
+  - group "Appointment details":
+    - text: Appointment details Department
+    - combobox "Department":
+      - option "Select a department" [selected]
+      - option "Cardiology"
+      - option "Paediatrics"
+      - option "Orthopaedics"
+      - option "Emergency & Trauma"
+    - text: Preferred doctor (optional)
+    - combobox "Preferred doctor (optional)":
+      - option "Any available doctor" [selected]
+      - option "Dr. Anita Rao (Cardiologist)"
+      - option "Dr. Rahul Mehta (Paediatrician)"
+      - option "Dr. Sana Iqbal (Orthopaedic Surgeon)"
+      - option "Dr. Vikram Nair (Emergency Physician)"
+    - text: Preferred appointment date
+    - textbox "Preferred appointment date"
+    - group "Preferred time":
+      - text: Preferred time
+      - radio "Morning (9 AM to 12 PM)"
+      - text: Morning (9 AM to 12 PM)
+      - radio "Afternoon (12 PM to 4 PM)"
+      - text: Afternoon (12 PM to 4 PM)
+      - radio "Evening (4 PM to 8 PM)"
+      - text: Evening (4 PM to 8 PM)
+    - group "Reminders (optional)":
+      - text: Reminders (optional)
+      - checkbox "Text message"
+      - text: Text message
+      - checkbox "Email"
+      - text: Email
+      - checkbox "This is my first visit"
+      - text: This is my first visit
+    - text: Reason for visit (optional) Briefly describe your symptoms or the reason for the appointment.
+    - textbox "Reason for visit (optional)"
+    - paragraph: 500 characters remaining
+  - group "Consent":
+    - text: Consent
+    - checkbox "I confirm the details are correct and agree to the hospital privacy policy."
+    - text: I confirm the details are correct and agree to the hospital privacy policy.
+  - button "Request appointment"
