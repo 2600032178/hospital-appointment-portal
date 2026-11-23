@@ -1,0 +1,28 @@
+- text: Book an Appointment Name
+- textbox "Name"
+- text: Age
+- textbox "Age"
+- text: Email
+- textbox "Email"
+- text: Phone
+- textbox "Phone"
+- text: Department
+- combobox:
+  - option "Select" [selected]
+  - option "Cardiology"
+  - option "Paediatrics"
+  - option "Orthopaedics"
+  - option "Emergency"
+- text: Date
+- textbox "dd/mm/yyyy"
+- text: Time
+- radio
+- text: Morning
+- radio
+- text: Afternoon
+- radio
+- text: Evening
+- checkbox
+- text: I agree to the terms
+- textbox "Problem"
+- text: Submit

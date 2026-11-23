@@ -1,0 +1,573 @@
+{
+ "before": {
+  "struct": {
+   "counts": {
+    "div": 67,
+    "header": 0,
+    "nav": 0,
+    "main": 0,
+    "section": 0,
+    "article": 0,
+    "aside": 0,
+    "footer": 0,
+    "ul": 0,
+    "address": 0,
+    "time": 0,
+    "fieldset": 0,
+    "legend": 0,
+    "label": 0,
+    "button": 0,
+    "form": 0
+   },
+   "heads": [],
+   "h1": 0,
+   "skips": 0,
+   "imgTotal": 4,
+   "imgNoAlt": 4,
+   "ctrlTotal": 11,
+   "ctrlUnnamed": 11,
+   "placeholderOnly": 6,
+   "clickDivs": 6,
+   "types": {
+    "text": 5,
+    "select": 1,
+    "radio": 3,
+    "checkbox": 1,
+    "textarea": 1
+   },
+   "lang": null,
+   "title": "Hospital",
+   "viewport": false,
+   "description": false,
+   "skip": false,
+   "required": 0,
+   "patterns": 0,
+   "autocomplete": 0
+  },
+  "contrast": {
+   "total": 47,
+   "fails": [
+    {
+     "text": "CityCare Hospital",
+     "ratio": 2.26,
+     "need": 3,
+     "fg": "rgb(255, 255, 255)",
+     "bg": "rgb(127,179,213)"
+    },
+    {
+     "text": "Home",
+     "ratio": 2.26,
+     "need": 4.5,
+     "fg": "rgb(255, 255, 255)",
+     "bg": "rgb(127,179,213)"
+    },
+    {
+     "text": "Services",
+     "ratio": 2.26,
+     "need": 4.5,
+     "fg": "rgb(255, 255, 255)",
+     "bg": "rgb(127,179,213)"
+    },
+    {
+     "text": "Doctors",
+     "ratio": 2.26,
+     "need": 4.5,
+     "fg": "rgb(255, 255, 255)",
+     "bg": "rgb(127,179,213)"
+    },
+    {
+     "text": "Appointment",
+     "ratio": 2.26,
+     "need": 4.5,
+     "fg": "rgb(255, 255, 255)",
+     "bg": "rgb(127,179,213)"
+    },
+    {
+     "text": "Welcome to CityCare Hospital",
+     "ratio": 1.82,
+     "need": 3,
+     "fg": "rgb(127, 179, 213)",
+     "bg": "rgb(214,234,248)"
+    },
+    {
+     "text": "Quality care for every family,",
+     "ratio": 2.3,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(214,234,248)"
+    },
+    {
+     "text": "Book Appointment",
+     "ratio": 1.94,
+     "need": 4.5,
+     "fg": "rgb(255, 255, 255)",
+     "bg": "rgb(133,193,233)"
+    },
+    {
+     "text": "Our Services",
+     "ratio": 2.26,
+     "need": 3,
+     "fg": "rgb(93, 173, 226)",
+     "bg": "rgb(245,245,245)"
+    },
+    {
+     "text": "Heart check-ups, ECG, echocard",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Care for infants, children and",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Bone, joint and sports injury ",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "24-hour emergency care with an",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Our Doctors",
+     "ratio": 2.26,
+     "need": 3,
+     "fg": "rgb(93, 173, 226)",
+     "bg": "rgb(245,245,245)"
+    },
+    {
+     "text": "Cardiologist",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Paediatrician",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Orthopaedic Surgeon",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Emergency Physician",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Book an Appointment",
+     "ratio": 2.26,
+     "need": 3,
+     "fg": "rgb(93, 173, 226)",
+     "bg": "rgb(245,245,245)"
+    },
+    {
+     "text": "Submit",
+     "ratio": 1.94,
+     "need": 4.5,
+     "fg": "rgb(255, 255, 255)",
+     "bg": "rgb(133,193,233)"
+    },
+    {
+     "text": "Call 040-5555-0100 any time",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "Mon - Sat: 9 AM to 8 PM",
+     "ratio": 2.85,
+     "need": 4.5,
+     "fg": "rgb(153, 153, 153)",
+     "bg": "rgb(255,255,255)"
+    },
+    {
+     "text": "\u00a9 2026 CityCare Hospital",
+     "ratio": 1.94,
+     "need": 4.5,
+     "fg": "rgb(238, 238, 238)",
+     "bg": "rgb(127,179,213)"
+    },
+    {
+     "text": "12 Health Avenue, Hyderabad",
+     "ratio": 1.94,
+     "need": 4.5,
+     "fg": "rgb(238, 238, 238)",
+     "bg": "rgb(127,179,213)"
+    }
+   ]
+  },
+  "tab_stops": 9,
+  "tab_no_focus_indicator": 9,
+  "submit_reachable": false,
+  "tab_names": [
+   [
+    "input",
+    "",
+    false
+   ],
+   [
+    "input",
+    "",
+    false
+   ],
+   [
+    "input",
+    "",
+    false
+   ],
+   [
+    "input",
+    "",
+    false
+   ],
+   [
+    "select",
+    "Select\nCardiology\nPaediatric",
+    false
+   ],
+   [
+    "input",
+    "",
+    false
+   ],
+   [
+    "input",
+    "on",
+    false
+   ],
+   [
+    "input",
+    "on",
+    false
+   ],
+   [
+    "textarea",
+    "",
+    false
+   ]
+  ],
+  "empty_submit": {
+   "dialogs": [
+    "Thank you, appointment booked!"
+   ],
+   "summary_visible": 0,
+   "inline_errors": 0,
+   "aria_invalid": 0,
+   "focus_id": ""
+  },
+  "first_tab": "",
+  "mobile_h_scroll": false,
+  "mobile_layout_width": 980,
+  "zoom200_h_scroll": false
+ },
+ "after": {
+  "struct": {
+   "counts": {
+    "div": 25,
+    "header": 1,
+    "nav": 1,
+    "main": 1,
+    "section": 6,
+    "article": 8,
+    "aside": 1,
+    "footer": 1,
+    "ul": 4,
+    "address": 1,
+    "time": 2,
+    "fieldset": 5,
+    "legend": 5,
+    "label": 15,
+    "button": 1,
+    "form": 1
+   },
+   "heads": [
+    [
+     "H1",
+     "Welcome to CityCare Hospital"
+    ],
+    [
+     "H2",
+     "Our Services"
+    ],
+    [
+     "H3",
+     "Cardiology"
+    ],
+    [
+     "H3",
+     "Paediatrics"
+    ],
+    [
+     "H3",
+     "Orthopaedics"
+    ],
+    [
+     "H3",
+     "Emergency & Trauma"
+    ],
+    [
+     "H2",
+     "Our Doctors"
+    ],
+    [
+     "H3",
+     "Dr. Anita Rao"
+    ],
+    [
+     "H3",
+     "Dr. Rahul Mehta"
+    ],
+    [
+     "H3",
+     "Dr. Sana Iqbal"
+    ],
+    [
+     "H3",
+     "Dr. Vikram Nair"
+    ],
+    [
+     "H2",
+     "Book an Appointment"
+    ],
+    [
+     "H3",
+     "There is a problem"
+    ],
+    [
+     "H2",
+     "Emergency"
+    ],
+    [
+     "H2",
+     "Visiting hours"
+    ]
+   ],
+   "h1": 1,
+   "skips": 0,
+   "imgTotal": 4,
+   "imgNoAlt": 0,
+   "ctrlTotal": 15,
+   "ctrlUnnamed": 0,
+   "placeholderOnly": 0,
+   "clickDivs": 0,
+   "types": {
+    "text": 1,
+    "date": 2,
+    "email": 1,
+    "tel": 1,
+    "select": 2,
+    "radio": 3,
+    "checkbox": 4,
+    "textarea": 1
+   },
+   "lang": "en",
+   "title": "CityCare Hospital | Services, Doctors and Appointments",
+   "viewport": true,
+   "description": true,
+   "skip": true,
+   "required": 8,
+   "patterns": 1,
+   "autocomplete": 4
+  },
+  "contrast": {
+   "total": 77,
+   "fails": []
+  },
+  "tab_stops": 28,
+  "tab_no_focus_indicator": 0,
+  "submit_reachable": true,
+  "tab_names": [
+   [
+    "a",
+    "Skip to main content",
+    true
+   ],
+   [
+    "a",
+    "CityCare Hospital",
+    true
+   ],
+   [
+    "a",
+    "Home",
+    true
+   ],
+   [
+    "a",
+    "Services",
+    true
+   ],
+   [
+    "a",
+    "Doctors",
+    true
+   ],
+   [
+    "a",
+    "Appointment",
+    true
+   ],
+   [
+    "a",
+    "Book an appointment",
+    true
+   ],
+   [
+    "input",
+    "full-name",
+    true
+   ],
+   [
+    "input",
+    "dob",
+    true
+   ],
+   [
+    "input",
+    "dob",
+    true
+   ],
+   [
+    "input",
+    "dob",
+    true
+   ],
+   [
+    "input",
+    "dob",
+    true
+   ],
+   [
+    "input",
+    "email",
+    true
+   ],
+   [
+    "input",
+    "phone",
+    true
+   ],
+   [
+    "select",
+    "Select a department\nCardiolo",
+    true
+   ],
+   [
+    "select",
+    "Any available doctor\nDr. Ani",
+    true
+   ],
+   [
+    "input",
+    "visit-date",
+    true
+   ],
+   [
+    "input",
+    "visit-date",
+    true
+   ],
+   [
+    "input",
+    "visit-date",
+    true
+   ],
+   [
+    "input",
+    "visit-date",
+    true
+   ],
+   [
+    "input",
+    "morning",
+    true
+   ],
+   [
+    "input",
+    "sms",
+    true
+   ],
+   [
+    "input",
+    "email",
+    true
+   ],
+   [
+    "input",
+    "yes",
+    true
+   ],
+   [
+    "textarea",
+    "reason",
+    true
+   ],
+   [
+    "input",
+    "yes",
+    true
+   ],
+   [
+    "button",
+    "Request appointment",
+    true
+   ],
+   [
+    "a",
+    "040-5555-0100",
+    true
+   ]
+  ],
+  "empty_submit": {
+   "dialogs": [],
+   "summary_visible": 1,
+   "inline_errors": 8,
+   "aria_invalid": 10,
+   "focus_id": "error-summary"
+  },
+  "format_errors": [
+   "Date of birth cannot be in the future.",
+   "Enter an email address in the format name@example.com.",
+   "Enter a 10-digit mobile number using digits only.",
+   "Select a department.",
+   "Choose today's date or a later date.",
+   "Select a preferred time (morning, afternoon or evening).",
+   "Tick the confirmation box to continue."
+  ],
+  "doctor_options_cardiology": [
+   "Any available doctor",
+   "Dr. Anita Rao (Cardiologist)"
+  ],
+  "valid_submit": {
+   "success_visible": true,
+   "focus_id": "success-box",
+   "summary_hidden": true
+  },
+  "radio_arrow_key": true,
+  "first_tab": "Skip to main content",
+  "mobile_h_scroll": false,
+  "mobile_layout_width": 390,
+  "zoom200_h_scroll": false
+ }
+}
